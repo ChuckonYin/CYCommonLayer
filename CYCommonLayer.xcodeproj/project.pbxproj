@@ -7,13 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		9E2030111DDD82DD0010A633 /* CYCommonLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = 9E20300F1DDD82DC0010A633 /* CYCommonLayer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9E2030361DDDA85D0010A633 /* CYCommonLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E2030351DDDA85D0010A633 /* CYCommonLayer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		9E20300C1DDD82DC0010A633 /* CYCommonLayer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CYCommonLayer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		9E20300F1DDD82DC0010A633 /* CYCommonLayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CYCommonLayer.h; sourceTree = "<group>"; };
-		9E2030101DDD82DD0010A633 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9E2030351DDDA85D0010A633 /* CYCommonLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CYCommonLayer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,8 +45,7 @@
 		9E20300E1DDD82DC0010A633 /* CYCommonLayer */ = {
 			isa = PBXGroup;
 			children = (
-				9E20300F1DDD82DC0010A633 /* CYCommonLayer.h */,
-				9E2030101DDD82DD0010A633 /* Info.plist */,
+				9E2030351DDDA85D0010A633 /* CYCommonLayer.swift */,
 			);
 			path = CYCommonLayer;
 			sourceTree = "<group>";
@@ -59,7 +57,6 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9E2030111DDD82DD0010A633 /* CYCommonLayer.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -95,6 +92,7 @@
 				TargetAttributes = {
 					9E20300B1DDD82DC0010A633 = {
 						CreatedOnToolsVersion = 8.1;
+						LastSwiftMigration = 0810;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -131,6 +129,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9E2030361DDDA85D0010A633 /* CYCommonLayer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -239,6 +238,7 @@
 		9E2030151DDD82DD0010A633 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -250,6 +250,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = yxk.CYCommonLayer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -257,6 +258,7 @@
 		9E2030161DDD82DD0010A633 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -291,6 +293,7 @@
 				9E2030161DDD82DD0010A633 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
